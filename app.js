@@ -5,7 +5,6 @@ $(function() {
 	let header = $("#header");
 	let intro = $("#intro");
 	let introH = intro.innerHeight(); 
-	// introH - height, высота блока
 	let scrollPos = $(window).scrollTop();
 	let nav = $("#nav");
 	let navToggle = $("#navToggle");
@@ -22,7 +21,6 @@ $(function() {
 	function checkScroll(scrollPos, introH) {
 		if( scrollPos > introH ) {
 			header.addClass("fixed");
-			// наш header будет зафиксирован вверху при скроллинге
 		} else {
 			header.removeClass("fixed");
 		}
@@ -43,7 +41,6 @@ $(function() {
 		$("html, body").animate({
 			scrollTop: elementOffset - 56
 		}, 700);
-    // скорость скроллинга отображается в милисекундах - 700, 1000
 	});
 
 
@@ -59,7 +56,6 @@ $(function() {
 
 
 	
-	// Reviews: https://kenwheeler.github.io/slick/
 	let slider = $("#reviewSlider");
 
 	slider.slick({
